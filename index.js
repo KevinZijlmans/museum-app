@@ -323,14 +323,40 @@ const data = {
       }
     ]
   }
-  const paintings = data.artObjects
-  for (i=0; i<paintings.length; i++) {
-      console.log(paintings[i])
-  }
-  const aType = document.createElement('a')
-  const imgType = document.createElement('img')
-  aType.href=href='./pages/detail-page.html"><img class="artObject" src="Images/Fish.jpg'
-  imgType.alt="art"
-  const gallerySection = document.getElementById('gallery')
-  gallerySection.appendChild(aType)
-  gallerySection.appendChild(imgType)
+//   const paintings = data.artObjects
+
+// //   for (i=0; i<paintings.length; i++) {
+// //       let currentPainting = [i]
+// //       console.log(paintings[i])
+// //       displayPainting(currentPainting)
+// //   }
+
+// //   function displayPainting(painting){
+
+//     paintings.forEach()
+//         const aType = document.createElement('a')
+//         const imgType = document.createElement('img')
+//         aType.href=data.artObjects.web
+//         imgType.alt=data.artObjects.links
+//         imgType.src=data.artObjects.url
+//         const gallerySection = document.getElementById('gallery')
+//         gallerySection.appendChild(aType)
+//         gallerySection.appendChild(imgType)
+//   }
+
+// const newElement = document.createElement('img')
+// const url = data.artObjects[0].webImage.url
+// newElement.src = url
+// const gallery = document.getElementById('gallery')
+// gallery.appendChild(newElement)
+
+for (let i = 0; i<data.artObjects.length; i++) {
+    const element = data.artObjects[i];
+
+ const newElement = document.createElement('img')
+ const url = data.artObjects[i].webImage.url
+ newElement.src = url
+ const gallery = document.getElementById('gallery')
+ gallery.appendChild(newElement)
+
+}
